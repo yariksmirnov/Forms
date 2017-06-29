@@ -62,6 +62,10 @@ public final class Form {
         return result
     }
     
+    public func formField(forName name: String) -> FormField? {
+        return mapKeyToFields[name]
+    }
+    
     @objc public func submit() {
         validate()
         if isValid {
