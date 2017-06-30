@@ -58,7 +58,7 @@ public final class Form {
     
     public var json: [String: String] {
         var result = [String: String]()
-        formFields.forEach { result[$0.name] = $0.value }
+        formFields.forEach { result[$0.key] = $0.value }
         return result
     }
     
